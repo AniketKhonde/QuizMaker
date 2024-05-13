@@ -30,17 +30,17 @@ npm run dev
 
 Open your web browser and navigate to http://localhost:3000 to view the application.
 
-Usage
+## Usage
 Creating a Quiz:
 Click on the "Create New Quiz" button to start creating a new quiz.
 Enter the quiz title and add questions with multiple-choice options.
 Click "Save" to save the quiz to local storage.
 
-Taking a Quiz:
+## Taking a Quiz:
 
 Navigate to the "Play Quiz" page.
 Select the quiz you want to take from the list.
 Answer each question and click "Submit" to see your score.
 
-Support and Feedback
+## Support and Feedback
 For questions, bug reports, or feature requests, please submit an issue on GitHub.
