@@ -109,7 +109,7 @@ function CreateQuiz() {
                         }}
                     >
                         <img src="/logo.gif" alt="Logo" style={{ marginRight: '0px', width: '60px', height: '60px', }} />
-                        <Typography variant="body1" sx={{ color: '#76ff03', marginTop: '8px', fontSize: '25px' }}>QuizMaker</Typography>
+                        <Typography variant="body1" fontWeight="bold" sx={{ color: '#76ff03', marginTop: '8px', fontSize: '25px' }}>QuizMaker</Typography>
                     </Box>
                     <Box sx={{ ml: 'auto' }}>
                         <Typography variant="h6" component={RouterLink} to="/" sx={{ textDecoration: 'none', color: location.pathname === '/' ? 'blue' : 'black', marginRight: { xs: '15px', md: '20px' }, fontSize: { xs: '13px', md: '21px' } }}>
@@ -129,8 +129,8 @@ function CreateQuiz() {
             </AppBar>
 
             {/* Main Content create quiz */}
-            <Box sx={{ padding: { md: '20px' } }}>
-                <Box sx={{ marginTop: '14vh', display: 'flex', flexDirection: 'column' }} minHeight={'400px'} width={{ xs: '95vw', md: '65.2vw' }} marginLeft={{ xs: '0vw', md: '13vw' }}>
+            <Box sx={{ padding: { md: '20px' }}}>
+                <Box sx={{ marginTop: {xs:'4vh',md:'14vh'}, display: 'flex', flexDirection: 'column' }} minHeight={'400px'} width={{ xs: '95vw', md: '65.2vw' }} marginLeft={{ xs: '0vw', md: '13vw' }}>
                     <Typography variant="h4" gutterBottom sx={{ marginBottom: '10px' }} fontSize={{ xs: '20px', md: '30px' }}>Create New Quiz</Typography>
                     <Box sx={{ border: '1px solid black', minHeight: '300px', boxShadow: '3', marginTop: '10px' }} width={{ xs: '95vw', md: '65.2vw' }}>
                         <TextField

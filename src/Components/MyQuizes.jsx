@@ -68,7 +68,7 @@ const MyQuizes = () => {
                         }}
                     >
                         <img src="/logo.gif" alt="Logo" style={{ marginRight: '0px', width: '60px', height: '60px', }} />
-                        <Typography variant="body1" sx={{ color: '#76ff03', marginTop: '8px', fontSize: '25px' }}>QuizMaker</Typography>
+                        <Typography variant="body1" fontWeight="bold" sx={{ color: '#76ff03', marginTop: '8px', fontSize: '25px' }}>QuizMaker</Typography>
                     </Box>
                     <Box sx={{ ml: 'auto' }}>
                         <Typography variant="h6" component={RouterLink} to="/" sx={{ textDecoration: 'none', color: location.pathname === '/' ? 'blue' : 'black', marginRight: { xs: '15px', md: '20px' }, fontSize: { xs: '13px', md: '21px' } }}>
@@ -88,7 +88,12 @@ const MyQuizes = () => {
             </AppBar>
 
             {quizzes.length === 0 ? (
+                <>
                 <Typography variant="h5" align="center" mt={4}>No quizzes available</Typography>
+                <Box sx={{ display: 'flex', width: {xs:'90%',md:'50%'}, height:{xs:'170px',md:'270px'}, marginLeft: { xs: '15px', md: '400px' }, marginTop: '30px', justifyContent: 'center', alignItems: 'center', boxShadow: 5, borderRadius: '30px' }}>
+                                <img src="./no_toshow.gif" alt="" />
+                            </Box>
+                </>
             ) : (
                 <TableContainer sx={{ marginLeft: { xs: '1px', md: '130px' }, marginTop: { xs: '40px', md: '100px' }, width: { xs: '98%', md: '80%' }, boxShadow: 5 }}>
                     <Table sx={{ minWidth: { xs: '100px', md: '650px' } }} aria-label="quiz table">

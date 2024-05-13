@@ -21,7 +21,7 @@ function Navbar() {
                             }}
                         >
                             <img src="/logo.gif" alt="Logo" style={{ marginRight: '0px', width: '60px', height: '60px', }} />
-                            <Typography variant="body1" sx={{ color: '#76ff03', marginTop: '8px', fontSize: '25px' }}>QuizMaker</Typography>
+                            <Typography variant="body1" fontWeight="bold" sx={{ color: '#76ff03', marginTop: '8px', fontSize: '25px', }}>QuizMaker</Typography>
                         </Box>
                         <Box sx={{ ml: 'auto' }}>
                             <Typography variant="h6" component={RouterLink} to="/" sx={{ textDecoration: 'none', color: location.pathname === '/' ? 'blue' : 'black', marginRight: '20px', fontSize: { xs: '13px', md: '21px' } }}>

@@ -93,7 +93,7 @@ const PlayQuiz = () => {
                         }}
                     >
                         <img src="/logo.gif" alt="Logo" style={{ marginRight: '0px', width: '60px', height: '60px', }} />
-                        <Typography variant="body1" sx={{ color: '#76ff03', marginTop: '8px', fontSize: '25px' }}>QuizMaker</Typography>
+                        <Typography variant="body1" fontWeight="bold" sx={{ color: '#76ff03', marginTop: '8px', fontSize: '25px' }}>QuizMaker</Typography>
                     </Box>
                     <Box sx={{ ml: 'auto' }}>
                         <Typography variant="h6" component={RouterLink} to="/" sx={{ textDecoration: 'none', color: location.pathname === '/' ? 'blue' : 'black', marginRight: { xs: '15px', md: '20px' }, fontSize: { xs: '13px', md: '21px' } }}>
@@ -113,7 +113,6 @@ const PlayQuiz = () => {
             </AppBar>
 
             <Typography variant="h2" align="center" mt={10} sx={{ fontSize: { xs: '30px', md: '44px' } }}>Play Quiz</Typography>
-
             {flag === 0 ? (
                 <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                     <Typography variant="h6">Enter your name to continue:</Typography>
@@ -130,8 +129,8 @@ const PlayQuiz = () => {
                     {activeQuizzes.length === 0 ? (
                         <Box sx={{}}>
                             <Typography variant="h5" align="center" mt={4}>No active quizzes available</Typography>
-                            <Button variant="contained" color="primary" component={RouterLink} to='/CreateQuiz' sx={{ marginLeft: '990px' }}>Create Quiz</Button>
-                            <Box sx={{ display: 'flex', width: '50%', height: '270px', marginLeft: { xs: '10px', md: '400px' }, marginTop: '30px', justifyContent: 'center', alignItems: 'center', boxShadow: 5, borderRadius: '30px' }}>
+                            <Button variant="contained" color="primary" component={RouterLink} to='/CreateQuiz' sx={{ marginLeft: {xs:'200px',md:'990px'} }}>Create Quiz</Button>
+                            <Box sx={{ display: 'flex', width: {xs:'90%',md:'50%'}, height:{xs:'170px',md:'270px'}, marginLeft: { xs: '10px', md: '400px' }, marginTop: '30px', justifyContent: 'center', alignItems: 'center', boxShadow: 5, borderRadius: '30px' }}>
                                 <img src="./no_toshow.gif" alt="" />
                             </Box>
                         </Box>
